@@ -115,11 +115,84 @@ button {
                         </div>
                         <h2>Family Detail Form</h2>
                         <form id="familyForm">
-                          <label for="fullName">Full Name:</label>
-                          <input type="text" id="fullName" name="fullName" required>
-                    
-                          <label for="age">Age:</label>
-                          <input type="number" id="age" name="age" required>
+                          <span for="fullName">Name:</span>
+                          <input type="text" id="" name="name">
+                          <span for="fullName">Middle Name:</span>
+                          <input type="text" id="" name="middle_name">
+                          <span for="fullName">Surname:</span>
+                          <input type="text" id="fullName" name="surname">
+                          <span for="fullName">Kindred:</span>
+                          <input type="text"  name="kindred">
+                          <span for="fullName">Village:</span>
+                          <input type="text" id="" name="village">
+                          <span for="fullName">Town:</span>
+                          <input type="text" id="" name="town">
+                          <span for="fullName">Local Government Area:</span>
+                          <input type="text" id="fullName" name="Area">
+                          <span for="fullName">State of Origin:</span>
+                          <input type="text" id="fullName" name="origin">
+                          <span for="fullName">Business Location Address:</span>
+                          <input type="text" id="fullName" name="address">
+                          <span for="fullName">Local Government Area:</span>
+                          <input type="text" id="fullName" name="Area">
+                          <span for="fullName">Country of Residence:</span>
+                          <input type="text" id="fullName" name="Area">
+
+                          <div class="checkbox-container">
+                            <label>Did You Pass throught Morocco?:</label>
+                            <span>yes</span> 
+                            <input type="checkbox" id="likeRice" name="likeRice">
+                            <span>No</span>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                          </div>
+
+                          <div class="checkbox-container">
+                            <label>what year did you passed throught Morocco?:</label>
+                            <span>yes</span> 
+                            <input type="checkbox" id="likeRice" name="likeRice">
+                            <span>No</span>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                          </div>
+
+
+                          <span for="">What City Were You during Your Time in Morocco:</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Telephone Number</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Whatapps Number</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Email Adress</span>
+                          <input type="email" id="fullName" name="City">
+
+                          <div class="checkbox-container">
+                            <label>Marital Status</label>
+                            <span>Married</span> 
+                            <input type="checkbox" id="likeRice" name="married">
+                            <span>Single</span>
+                            <input type="checkbox" id="vehicle1" name="single" value="Bike">
+                          </div>
+
+                          
+                          <div class="checkbox-container">
+                            <label>Your Mother Still alive?</label>
+                            <span>yes</span> 
+                            <input type="checkbox" id="likeRice" name="yes">
+                            <span>No</span>
+                            <input type="checkbox" id="vehicle1" name="No" value="Bike">
+                          </div>
+
+                          <div class="checkbox-container">
+                            <label>Your Father Still alive?</label>
+                            <span>yes</span> 
+                            <input type="checkbox" id="likeRice" name="yes">
+                            <span>No</span>
+                            <input type="checkbox" id="vehicle1" name="No" value="Bike">
+                          </div>
+
+
                     
                           <label for="relation">Relation:</label>
                           <input type="text" id="relation" name="relation" required>
@@ -135,8 +208,8 @@ button {
                           <div class="checkbox-container">
                             <span>Do you like rice?</span> 
                             <input type="checkbox" id="likeRice" name="likeRice" required>
+                            <label for="vehicle1"> I have a bike</label>
                             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                            <label for="vehicle1"> I have a bike</label><br>
                           </div>
                     
                           <button type="submit">Submit</button>
