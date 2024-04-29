@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class FamilyController extends Controller
+{
+    public function family(){
+
+
+        return view('admin.family');
+    }
+}
