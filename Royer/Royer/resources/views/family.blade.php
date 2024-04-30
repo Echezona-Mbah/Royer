@@ -102,10 +102,9 @@ button[type="submit"]:hover {
     margin-top: -100px; 
 }
 
-/* Password-style for the image */
 .password-style img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
     border: 2px solid #ccc; 
     padding: 5px; 
@@ -113,9 +112,8 @@ button[type="submit"]:hover {
     transition: border-color 0.3s ease;
 }
 
-/* Hover effect for password-style image */
 .password-style img:hover {
-    border-color: #999; /* Change border color on hover */
+    border-color: #999;
 }
 
 
@@ -213,7 +211,7 @@ button[type="submit"]:hover {
                     </div>
                     <div class="form-group">
                         <label for="country">Country of Residence:</label>
-                        <input type="text" id="country" name="Area">
+                        <input type="text" id="country" name="country">
                     </div>
                     <div class="checkbox-group">
                         <label>Did You Pass through Morocco?:</label>
@@ -273,45 +271,47 @@ button[type="submit"]:hover {
 
                     <div class="form-group">
                         <label for="whatsapp">Name of Next Of Kins:</label>
-                        <input type="text" id="whatsapp" name="whatsapp">
+                        <input type="text" id="whatsapp" name="name_kins">
                     </div>
 
                     <div class="form-group">
                         <label for="whatsapp">Home Town of Next Of Kins:</label>
-                        <input type="text" id="whatsapp" name="whatsapp">
+                        <input type="text" id="whatsapp" name="town_kins">
                     </div>
 
                     <div class="form-group">
                         <label for="whatsapp">Village of Next Of Kins:</label>
-                        <input type="text" id="whatsapp" name="whatsapp">
+                        <input type="text" id="whatsapp" name="village_kins">
                     </div>
 
                     <div class="form-group">
                         <label for="whatsapp">Country of redidence of Next Of Kins:</label>
-                        <input type="text" id="whatsapp" name="whatsapp">
+                        <input type="text" id="whatsapp" name="redidence_kins">
                     </div>
 
                     <div class="form-group">
                         <label for="whatsapp">Relationship with Next Of Kins:</label>
-                        <input type="text" id="whatsapp" name="whatsapp">
+                        <input type="text" id="whatsapp" name="relationship_kins">
                     </div>
 
                     <div class="form-group">
                         <label for="whatsapp">Telephone of Next Of Kins:</label>
-                        <input type="text" id="whatsapp" name="whatsapp">
+                        <input type="text" id="whatsapp" name="telephone_kins">
                     </div>
 
                     <div class="form-group">
                         <label for="whatsapp">Whatapps Number of Next Of Kins:</label>
-                        <input type="text" id="whatsapp" name="whatsapp">
-                    </div>
-
-                    <h6 style="text-align: center;color:red">SPACE RESERVED FOR OFFICIAL USE</h6><br>
+                        <input type="text" id="whatsapp" name="whatsapp_kins">
+                    </div><br><br>
 
                     <div class="other-img password-style">
-                        <img src="other-image.png" alt="Other Image">
+                        <label for="uploadImage">Upload Image:</label>
+                        <input type="file" id="uploadImage" name="image" accept="image/*">
                     </div>
 
+                    {{-- <h6 style="text-align: center;color:red">SPACE RESERVED FOR OFFICIAL USE</h6><br> --}}
+
+                    <button type="submit">Submit</button>
                     <form>
 
 
