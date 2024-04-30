@@ -65,7 +65,7 @@ form {
 }
 
 
-
+input[type="email"],
 input[type="text"],
 input[type="number"],
 input[type="tel"],
@@ -112,8 +112,9 @@ button {
                     <div class="form-container">
                         <div class="logo">
                           <img src="logo.png" alt="Logo">
-                        </div>
-                        <h2>Family Detail Form</h2>
+                        </div><br>
+                        <h4 style="text-align: center">BiDon Family Association</h4>
+                        <h6 style="text-align: center">Membleship Application for Registration</h6>
                         <form id="familyForm">
                           <span for="fullName">Name:</span>
                           <input type="text" id="" name="name">
@@ -144,15 +145,12 @@ button {
                             <input type="checkbox" id="likeRice" name="likeRice">
                             <span>No</span>
                             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                          </div>
+                          </div><br>
 
-                          <div class="checkbox-container">
-                            <label>what year did you passed throught Morocco?:</label>
-                            <span>yes</span> 
-                            <input type="checkbox" id="likeRice" name="likeRice">
-                            <span>No</span>
-                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                          </div>
+
+
+                          <span for="">what year did you passed throught Morocco?</span>
+                          <input type="text" id="fullName" name="City">
 
 
                           <span for="">What City Were You during Your Time in Morocco:</span>
@@ -168,7 +166,7 @@ button {
                           <input type="email" id="fullName" name="City">
 
                           <div class="checkbox-container">
-                            <label>Marital Status</label>
+                            <label>Marital Status:</label>
                             <span>Married</span> 
                             <input type="checkbox" id="likeRice" name="married">
                             <span>Single</span>
@@ -197,24 +195,41 @@ button {
                           <label for="relation">Relation:</label>
                           <input type="text" id="relation" name="relation" required>
                     
-                          <h3>Next of Kin Information</h3>
-                          <label for="kinName">Full Name:</label>
-                          <input type="text" id="kinName" name="kinName" required>
+                          <h6 style="text-align: center;color:red">Detail Of Next of Kins</h6><br>
+                          <span for="">Name of Next Of Kins</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Home Town of Next Of Kins</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Village of Next Of Kins</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Country of redidence of Next Of Kins</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Relationship with Next Of Kins</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Telephone of Next Of Kins</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <span for="">Whatapps Number of Next Of Kins</span>
+                          <input type="text" id="fullName" name="City">
+
+                          <h6 style="text-align: center;color:red">SPACE RESERVED FOR OFFICIAL USE</h6><br>
                     
-                          <label for="kinContact">Contact:</label>
-                          <input type="tel" id="kinContact" name="kinContact" required>
-                    
-                          <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                          <div class="checkbox-container">
-                            <span>Do you like rice?</span> 
-                            <input type="checkbox" id="likeRice" name="likeRice" required>
-                            <label for="vehicle1"> I have a bike</label>
-                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                          </div>
+                          {{-- <div class="checkbox-container">
+                            <label>Your Father Still alive?</label>
+                            <span>yes</span> 
+                            <input type="checkbox" id="likeRice" name="yes">
+                            <span>No</span>
+                            <input type="checkbox" id="vehicle1" name="No" value="Bike">
+                          </div> --}}
                     
                           <button type="submit">Submit</button>
                         </form>
-                      </div>
+                    </div>
                     
                       
                   </div>
