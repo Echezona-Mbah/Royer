@@ -15,6 +15,8 @@ $siteName = 'Royal 10 Investment Limited'?>
 <?php $siteYear = date('Y')?>
 @include('lib')
 @include('head')
+<link rel="stylesheet" href="{{ asset('vendor/sweetalert2/sweetalert2.min.css') }}">
+<script src="{{ asset('vendor/sweetalert2/sweetalert2.all.min.js') }}"></script>
 <style>
     .services-item-wrap {
     text-align: center;
@@ -121,6 +123,7 @@ button[type="submit"]:hover {
 
 <body>
     @include('header')
+    @include('sweetalert::alert')
  <main class="fix">
   <!-- breadcrumb-area -->
   <section class="breadcrumb__area breadcrumb__bg" data-background="img/image-cover.png">
@@ -164,15 +167,18 @@ button[type="submit"]:hover {
     <div class="services-item-wrap">
         <div class="row justify-content-center">
             <div class="form-container">
+                <form id="familyForm" method="POST" action="{{ route('family') }}" enctype="multipart/form-data">
+                    @csrf
                 <div class="logo">
                     <img src="{{asset('img/logo.png')}}" alt="Logo">
                 </div>
-                <div class="other-img password-style">
-                    <img src="other-image.png" alt="Other Image">
+                <div class="other-img password-style" onclick="document.getElementById('uploadImage').click()">
+                    <img id="previewImage" src="other-image.png" alt="password">
                 </div>
+                <input type="file" id="uploadImage" name="image" accept="image/*" style="display: none;" onchange="previewFile()">
+                
                 <h4 class="form-title">BiDon Family Association</h4>
                 <h6 class="form-subtitle">Membership Application for Registration</h6>
-                <form id="familyForm">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name">
@@ -304,12 +310,10 @@ button[type="submit"]:hover {
                         <input type="text" id="whatsapp" name="whatsapp_kins">
                     </div><br><br>
 
-                    <div class="other-img password-style">
-                        <label for="uploadImage">Upload Image:</label>
-                        <input type="file" id="uploadImage" name="image" accept="image/*">
-                    </div>
+
 
                     {{-- <h6 style="text-align: center;color:red">SPACE RESERVED FOR OFFICIAL USE</h6><br> --}}
+
 
                     <button type="submit">Submit</button>
                     <form>
@@ -321,4 +325,35 @@ button[type="submit"]:hover {
   </section>
 
  </main>
+
+ <script>
+    function previewFile() {
+        const preview = document.getElementById('previewImage');
+        const file = document.querySelector('input[type=file]').files[0];
+        const reader = new FileReader();
+
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = "other-image.png";
+        }
+    }
+</script>
+
+@if ($errors->any())
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script>
+    Swal.fire({
+        icon: 'error',
+        title: 'Validation Error',
+        html: `{!! implode('<br>', $errors->all()) !!}`,
+        confirmButtonText: 'OK',
+    });
+</script>
+@endif
+
  @include('footer')

@@ -62,6 +62,7 @@
           </li>
           <li><a href='{{ route('gallery') }}'>Gallery</a></li>
           <li><a href='{{ route('contact') }}'>contacts</a></li>
+          <li><a href='{{ route('family') }}'>BiDon</a></li>
           <li><a href='{{ route('login') }}'>Login</a></li>
          </ul>
         </div>

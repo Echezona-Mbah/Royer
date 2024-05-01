@@ -47,6 +47,8 @@ Route::middleware('guest')->group(function () {
                 ->name('password.store');
 
     Route::get('family', [FamilyController::class, 'family'])->name('family');
+    Route::post('family', [FamilyController::class, 'submitForm'])->name('family');
+
 
 });
 
@@ -125,7 +127,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('info/{id}', [InfoController::class, 'infodestroy'])->name('info.destroy');
 
 
-    // Route::get('family', [FamilyController::class, 'family'])->name('family');
+     Route::get('family-table', [FamilyController::class, 'allfamily'])->name('family-table');
+     Route::delete('family/{id}', [FamilyController::class, 'familtdestroy'])->name('family.destroy');
 
 
 

@@ -228,6 +228,13 @@
     </li>
 
     <li class="nav-item">
+        <a class="nav-link" href="{{ route('family-table') }}">
+            <i class="icon-head menu-icon"></i>
+            <span class="menu-title">Family Table</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             <i class="icon-server menu-icon"></i>
             <span class="menu-title">Logout</span>

@@ -33,11 +33,11 @@ return new class extends Migration
             $table->string('mother_alive')->nullable();
             $table->string('name_kins')->nullable();
             $table->string('village_kins')->nullable();
-            $table->string('email')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('email')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('email')->nullable();
+            $table->string('redidence_kins')->nullable();
+            $table->string('relationship_kins')->nullable();
+            $table->string('telephone_kins')->nullable();
+            $table->string('whatsapp_kins')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
