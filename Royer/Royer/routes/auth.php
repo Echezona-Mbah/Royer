@@ -24,10 +24,10 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
-    // Route::get('register', [RegisteredUserController::class, 'create'])
-    //             ->name('register');
+    Route::get('register', [RegisteredUserController::class, 'create'])
+                ->name('register');
 
-    // Route::post('register', [RegisteredUserController::class, 'store']);
+    Route::post('register', [RegisteredUserController::class, 'store']);
 
     Route::get('login', [AuthenticatedSessionController::class, 'create'])
                 ->name('login');
@@ -46,7 +46,7 @@ Route::middleware('guest')->group(function () {
     Route::post('reset-password', [NewPasswordController::class, 'store'])
                 ->name('password.store');
 
-    Route::get('family', [FamilyController::class, 'family'])->name('family');
+    Route::get('registerN', [FamilyController::class, 'family'])->name('family');
     Route::post('family', [FamilyController::class, 'submitForm'])->name('family');
 
 
@@ -128,6 +128,8 @@ Route::middleware('auth')->group(function () {
 
 
      Route::get('family-table', [FamilyController::class, 'allfamily'])->name('family-table');
+     Route::get('family/{id}', [FamilyController::class, 'editFamily'])->name('family.edit');
+     Route::post('family/{id}', [FamilyController::class, 'update'])->name('family.update');
      Route::delete('family/{id}', [FamilyController::class, 'familtdestroy'])->name('family.destroy');
 
 
@@ -141,10 +143,10 @@ Route::middleware('auth')->group(function () {
 
 
 
-    Route::get('register', [RegisteredUserController::class, 'create'])
-                ->name('register');
+    // Route::get('register', [RegisteredUserController::class, 'create'])
+    //             ->name('register');
 
-    Route::post('register', [RegisteredUserController::class, 'store']);
+    // Route::post('register', [RegisteredUserController::class, 'store']);
 
 
 

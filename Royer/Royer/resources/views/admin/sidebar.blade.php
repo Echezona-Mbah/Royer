@@ -230,7 +230,7 @@
     <li class="nav-item">
         <a class="nav-link" href="{{ route('family-table') }}">
             <i class="icon-head menu-icon"></i>
-            <span class="menu-title">Family Table</span>
+            <span class="menu-title">Register Table</span>
         </a>
     </li>
 

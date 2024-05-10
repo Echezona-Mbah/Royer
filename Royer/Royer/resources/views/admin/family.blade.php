@@ -113,7 +113,7 @@ button {
                         <div class="logo">
                           <img src="logo.png" alt="Logo">
                         </div><br>
-                        <h4 style="text-align: center">BiDon Family Association</h4>
+                        <h4 style="text-align: center">The 10 Men Investment Register Association</h4>
                         <h6 style="text-align: center">Membleship Application for Registration</h6>
                         <form id="familyForm">
                           <span for="fullName">Name:</span>

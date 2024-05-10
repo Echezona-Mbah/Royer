@@ -54,13 +54,13 @@
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 style="color:#c80d9f">Table Family </h4>
+                    <h4 style="color:#c80d9f">Table Register </h4>
                     <p class="card-description">
                       {{-- Add class <code>.table-striped</code> --}}
                     </p>
 
                     @if ($allfamily->isEmpty())
-                    <p>No about available.</p>
+                    <p>No Register available.</p>
                 @else
                     <div class="table-responsive">
                       <table class="table table-striped">
@@ -91,7 +91,8 @@
                             <th> Relationship with Next Of Kins</th>
                             <th> Telephone of Next Of Kins</th>
                             <th> Whatapps Number of Next Of Kins</th>
-                            <th> Password</th>
+                            <th> Passport</th>
+                            <th>Edit</th>
                             <th> Delete</th>
 
 
@@ -127,6 +128,9 @@
                             <td class="py-1">
                                 <img src="{{ asset('uploads/' . $family->image) }}" alt="Team Image">
                             </td>
+                            <td>
+                              <a href="{{ route('family.edit', $family->id) }}" class="btn btn-primary">Edit</a>
+                          </td>
                             
                             <td>
                                 <form action="{{ route('family.destroy', $family->id) }}" method="POST">

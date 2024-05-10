@@ -131,7 +131,7 @@ button[type="submit"]:hover {
     <div class="row">
      <div class="col-lg-6">
       <div class="breadcrumb__content">
-       <h2 class="title">BiDon Family Association</h2>
+       <h2 class="title">Royal 10 Investment Limited</h2>
        <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href='./'>Home</a></li>
@@ -158,7 +158,7 @@ button[type="submit"]:hover {
     <div class="row justify-content-center">
      <div class="col-xl-6 col-lg-8">
       <div class="section-title text-center mb-40">
-       <span class="sub-title">BiDon Family Association</span>
+       <span class="sub-title">Royal 10 Investment Limited</span>
        <h2 class="title">Membership Application for Registration</h2>
       </div>
      </div>
@@ -177,7 +177,7 @@ button[type="submit"]:hover {
                 </div>
                 <input type="file" id="uploadImage" name="image" accept="image/*" style="display: none;" onchange="previewFile()">
                 
-                <h4 class="form-title">BiDon Family Association</h4>
+                <h4 class="form-title">Royal 10 Investment Limited</h4>
                 <h6 class="form-subtitle">Membership Application for Registration</h6>
                     <div class="form-group">
                         <label for="name">Name:</label>
