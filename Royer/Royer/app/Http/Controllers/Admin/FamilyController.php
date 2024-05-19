@@ -35,7 +35,7 @@ class FamilyController extends Controller
             'country' => 'required|string',
             // 'pass_morocco' => 'required|string',
             // 'year_morocco' => 'required|string',
-            // 'city_morocco' => 'required|string',
+            'city_morocco' => 'required|string',
             'telephone' => 'required|string',
             'whatsapp' => 'required|string',
             'email' => 'required|string',
