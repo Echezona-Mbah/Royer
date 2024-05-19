@@ -213,7 +213,7 @@ button[type="submit"]:hover {
                                 <label for="country">Country of Residence:</label>
                                 <input type="text" id="country" name="country" value="{{$allfamily->country}}">
                             </div>
-                            <div class="checkbox-group">
+                            {{-- <div class="checkbox-group">
                                 <label>Did You Pass through Morocco?:</label>
                                 <div>
                                     <input type="checkbox" id="passYes" name="pass_morocco" >
@@ -231,7 +231,7 @@ button[type="submit"]:hover {
                             <div class="form-group">
                                 <label for="cityMorocco">City during time in Morocco:</label>
                                 <input type="text" id="cityMorocco" name="city_morocco" value="{{$allfamily->city_morocco}}">
-                            </div>
+                            </div> --}}
                             <div class="form-group">
                                 <label for="telephone">Telephone Number:</label>
                                 <input type="text" id="telephone" name="telephone" value="{{$allfamily->telephone}}">

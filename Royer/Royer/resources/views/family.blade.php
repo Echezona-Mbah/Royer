@@ -176,7 +176,7 @@ button[type="submit"]:hover {
                     <img id="previewImage" src="other-image.png" alt="password">
                 </div>
                 <input type="file" id="uploadImage" name="image" accept="image/*" style="display: none;" onchange="previewFile()">
-                
+                <br><br>
                 <h4 class="form-title">Royal 10 Investment Limited</h4>
                 <h6 class="form-subtitle">Membership Application for Registration</h6>
                     <div class="form-group">
@@ -219,7 +219,7 @@ button[type="submit"]:hover {
                         <label for="country">Country of Residence:</label>
                         <input type="text" id="country" name="country">
                     </div>
-                    <div class="checkbox-group">
+                    {{-- <div class="checkbox-group">
                         <label>Did You Pass through Morocco?:</label>
                         <div>
                             <input type="checkbox" id="passYes" name="pass_morocco">
@@ -229,15 +229,15 @@ button[type="submit"]:hover {
                             <input type="checkbox" id="passNo" name="pass_morocco">
                             <label for="passNo">No</label>
                         </div>
-                    </div>
-                    <div class="form-group">
+                    </div> --}}
+                    {{-- <div class="form-group">
                         <label for="yearMorocco">Year passed through Morocco:</label>
                         <input type="text" id="yearMorocco" name="year_morocco">
                     </div>
                     <div class="form-group">
                         <label for="cityMorocco">City during time in Morocco:</label>
                         <input type="text" id="cityMorocco" name="city_morocco">
-                    </div>
+                    </div> --}}
                     <div class="form-group">
                         <label for="telephone">Telephone Number:</label>
                         <input type="text" id="telephone" name="telephone">

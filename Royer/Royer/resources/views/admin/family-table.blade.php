@@ -76,9 +76,9 @@
                             <th> State of Origin</th>
                             <th> Business Location Address</th>
                             <th> Country of Residence</th>
-                            <th> through Morocco</th>
+                            {{-- <th> through Morocco</th>
                             <th> Year passed</th>
-                            <th> City during</th>
+                            <th> City during</th> --}}
                             <th> Telephone Number</th>
                             <th> WhatsApp <br> Number</th>
                             <th> Email</th>
@@ -111,9 +111,9 @@
                             <td>{{ $family->origin}}</td>
                             <td>{{ $family->address}}</td>
                             <td>{{ $family->country}}</td>
-                            <td>{{ $family->pass_morocco}}</td>
+                            {{-- <td>{{ $family->pass_morocco}}</td>
                             <td>{{ $family->year_morocco}}</td>
-                            <td>{{ $family->city_morocco}}</td>
+                            <td>{{ $family->city_morocco}}</td> --}}
                             <td>{{ $family->telephone}}</td>
                             <td>{{ $family->whatsapp}}</td>
                             <td>{{ $family->email}}</td>

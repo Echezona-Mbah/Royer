@@ -139,7 +139,7 @@ button {
                           <span for="fullName">Country of Residence:</span>
                           <input type="text" id="fullName" name="Area">
 
-                          <div class="checkbox-container">
+                          {{-- <div class="checkbox-container">
                             <label>Did You Pass throught Morocco?:</label>
                             <span>yes</span> 
                             <input type="checkbox" id="likeRice" name="likeRice">
@@ -154,7 +154,7 @@ button {
 
 
                           <span for="">What City Were You during Your Time in Morocco:</span>
-                          <input type="text" id="fullName" name="City">
+                          <input type="text" id="fullName" name="City"> --}}
 
                           <span for="">Telephone Number</span>
                           <input type="text" id="fullName" name="City">
