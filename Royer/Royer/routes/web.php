@@ -138,10 +138,10 @@ Route::get('/team', function () {
     return view('team',compact('Teams','contact'));
 })->name('team');
 
-// Route::get('/clear-cache', function() {
-//     $exitCode = Artisan::call('optimize:clear');
-//     // return what you want
-// });
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('optimize:clear');
+    // return what you want
+});
 
 
 Route::get('/dashboard', function () {
